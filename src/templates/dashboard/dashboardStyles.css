@@ -1,0 +1,402 @@
+@import url("https://use.typekit.net/omg7yww.css");
+body {
+  background: #f5f5f5;
+  margin: 0;
+}
+/*----------
+Fonts
+-----------*/
+.a__h2 {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #101010;
+}
+.a__h3 {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #101010;
+}
+.a__p {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #5d5d5d;
+}
+.a__link {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #a1a1a1;
+  transform: all 0.5s ease;
+}
+.a__link:hover {
+  color: #797979;
+}
+.a__inline-call-out {
+  color: #a1a1a1;
+}
+/*----------
+Navigation
+-----------*/
+.a__mobile-header {
+  display: none;
+}
+.a__mobile-settings-header {
+  display: none;
+}
+.a__mobile-logo {
+  display: none;
+}
+.a__desktop-logo {
+  display: block;
+}
+.a__nav-container {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgba(16, 16, 16, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.a__desktop-header {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a__logo-container img {
+  max-width: 160px;
+  margin-top: 5px;
+}
+#a__mobile-toggle {
+  display: none;
+}
+.a__dropdown {
+  position: relative;
+}
+.a__dropdown-container {
+  display: none;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  width: 200px;
+  background: #ffffff;
+  border: 0.5px solid #eaeaea;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  z-index: 5;
+}
+.a__dropdown-container.a__active-dropdown {
+  display: block;
+}
+.a__dropdown-container .a__dropdown-link {
+  font-size: 12px;
+  line-height: 17px;
+  padding: 10px;
+  color: #a1a1a1;
+  transition: all 0.5s ease;
+}
+.a__dropdown-container .a__dropdown-link:hover {
+  background: #f3f7ff;
+  color: #5d50e6;
+}
+/*----------
+Menu Links
+-----------*/
+.a__menu-items {
+  display: flex;
+  flex-direction: row;
+}
+.a__menu-items a {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  color: #5d5d5d;
+  padding: 25px 15px;
+}
+.a__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a__menu-items .a__profile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cd93ff;
+  color: #fff;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+/*----------
+Body
+-----------*/
+.a__body-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  flex: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+.a__main-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
+  box-sizing: border-box;
+  border-top: 1px solid #eaeaea;
+  min-height: 100vh;
+}
+
+/*----------
+Tabs
+-----------*/
+#dashboard-tabs.g__line_style .g__tabs_wrapper {
+  padding: 0;
+}
+#dashboard-tabs.g__line_style .g__tab_line .g__tab_line_wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#dashboard-tabs.g__line_style .g__tab_line .g__active {
+  color: #000000;
+  border-bottom: 4px solid #5d50e6;
+}
+#dashboard-tabs.g__line_style
+  .g__tab_line
+  .g__tab_line_wrap.g__active
+  a.g__tab_line_link,
+#dashboard-tabs.g__line_style .g__tab_line .g__tab_line_wrap.g__active i {
+  color: #000000;
+}
+#dashboard-tabs.g__line_style {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#dashboard-tabs.g__line_style .g__tabs_container.g__tab_line {
+  border-bottom: 0;
+}
+
+/* ----------
+Left Sidebar
+----------*/
+
+#a__main-sidebar.a__settings-tabs .g__tabs_wrapper {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  width: 100%;
+}
+#a__main-sidebar.a__settings-tabs .g__tabs_container {
+  width: 100%;
+}
+#a__main-sidebar .g__tab_block .g__tab_block_wrap p {
+  margin-bottom: revert;
+}
+.a__left-sidebar {
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  border-right: 1px solid #eaeaea;
+}
+.a__settings-header {
+  font-family: hero-new, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #a1a1a1;
+  padding: 0 15px;
+}
+#a__main-sidebar.a__settings-tabs {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#a__main-sidebar.a__settings-tabs .g__tab_block a.g__tab_block_wrap {
+  align-items: flex-start;
+}
+
+/* ----------
+Mobile Styles
+----------*/
+
+@media only screen and (max-width: 768px) {
+  .a__nav-container {
+    display: block;
+    background: #ffffff;
+  }
+  .a__mobile-settings-header {
+    display: flex;
+  }
+  .a__desktop-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: -100vw;
+    transition: all 0.5s ease;
+  }
+  .a__desktop-header.a__active-mobile-menu {
+    margin-left: 0;
+  }
+  .a__menu-items {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .a__logo-container {
+    padding: 30px 15px 50px 35px;
+  }
+  .a__desktop-logo {
+    display: none;
+  }
+  .a__mobile-logo {
+    display: block;
+  }
+  .a__mobile-settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fafafa;
+  }
+  .a__mobile-settings-header i {
+    font-size: 40px;
+    color: #a1a1a1;
+  }
+  h2.a__settings-text {
+    font-family: Hero New;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    color: #a1a1a1;
+  }
+  .a__mobile-header {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .a__dropdown {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .a__dropdown .a__profile-logo {
+    display: none;
+  }
+  .a__dropdown-container {
+    display: block;
+    width: 100%;
+    position: initial;
+    background: transparent;
+    border: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  .a__dropdown-container .a__dropdown-link {
+    padding: 35px;
+    font-size: 24px;
+  }
+  /* ----- Hamburger ----- */
+  .a__hamburger-container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+  }
+  .a__bar1,
+  .a__bar2,
+  .a__bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #bfbfbf;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  .a__hamburger-active .a__bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .a__hamburger-active.a__bar2 {
+    opacity: 0;
+  }
+  .a__hamburger-active .a__bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .a__logo-container-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .a__logo-container-mobile img {
+    max-width: 150px;
+    margin-top: 3px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .a__body-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .a__nav-container.a__menu-active {
+    margin-left: initial;
+  }
+
+  .a__menu-items a {
+    padding: 5px 0;
+  }
+  #dashboard-tabs.g__line_style {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  /* ---------- Left sidebar tabs ----------*/
+  .a__left-sidebar {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    border-right: 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .a__left-sidebar #a__main-sidebar .g__tabs_container {
+    flex-direction: row;
+  }
+}

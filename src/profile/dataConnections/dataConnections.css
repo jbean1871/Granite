@@ -1,0 +1,68 @@
+.a__data-connetions-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px;
+}
+.a__connection-table {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+}
+.a__connection-desc {
+  padding: 15px;
+}
+.a__connection {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.a__connection:not(:first-of-type) {
+  border-top: 1px solid #eaeaea;
+}
+.a__connection-logo {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 75px;
+}
+.a__connection-name {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #5d5d5d;
+  font-size: 16px;
+  line-height: 24px;
+}
+.a__connection-logo img {
+  max-height: 50px;
+  width: auto;
+}
+.a__connection-check i {
+  color: #4ec677;
+  font-size: 16px;
+}
+.a__connection-btn {
+  display: flex;
+  background: #bfbfbf;
+  border-radius: 35px;
+  padding: 5px 40px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: auto;
+  transition: all 0.5s ease;
+}
+.a__connection-btn.a__connected {
+  background: #4ec677;
+}
+/* ----------
+Mobile Styles
+----------*/
+@media only screen and (max-width: 768px) {
+  .a__connection-check,
+  .a__connection-logo {
+    display: none;
+  }
+}

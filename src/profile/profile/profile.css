@@ -1,0 +1,107 @@
+.a__overview-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+/*----------
+Profile Icon
+-----------*/
+.a__profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background: #cd93ff;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 50px;
+}
+.a__edit-image {
+  font-size: 11px;
+  margin-top: 15px;
+}
+/*----------
+Form
+-----------*/
+.a__overview-content #a__about-me-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.a__overview-content #a__about-me-form .g__field_info label {
+  color: #a1a1a1;
+  padding-right: 15px;
+}
+.a__overview-content #a__about-me-form .g__form_field {
+  flex-direction: row;
+  border-bottom: 1px solid #a1a1a1;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+.a__overview-content #a__about-me-form .g__form_field input {
+  flex: 1;
+  border: 0px solid #fff;
+  color: #101010;
+}
+.a__overview-content #a__about-me-form .g__form_field input:focus {
+  color: #5d50e6;
+}
+.a__overview-content #a__about-me-form .g__button_container {
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 50px;
+}
+.a__overview-content #a__about-me-form #g__cancel_btn {
+  background: #ffffff;
+  color: #a1a1a1;
+  padding: 5px;
+  font-size: 12px;
+  order: 1;
+  text-decoration: underline;
+}
+.a__overview-content #a__about-me-form #g__cancel_btn:hover {
+  background: #ffffff;
+  color: #5d5d5d;
+  padding: 5px;
+  font-size: 12px;
+  order: 1;
+  text-decoration: underline;
+}
+.a__overview-content #a__about-me-form #g__cancel_btn:active {
+  background: #ffffff;
+  color: #101010;
+  padding: 5px;
+  font-size: 12px;
+  order: 1;
+  text-decoration: underline;
+}
+.a__overview-content #a__about-me-form #g__submit_btn {
+  border-radius: 50px;
+  order: 2;
+  font-size: 12px;
+  padding: 10px 30px;
+  background: #5d50e6;
+}
+.a__overview-content #a__about-me-form #g__submit_btn:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    #5d50e6;
+}
+.a__overview-content #a__about-me-form #g__submit_btn:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    #5d50e6;
+}
+#a__about-me-form .g__form_field.g__auth-field input:-webkit-autofill,
+#a__about-me-form .g__form_field.g__auth-field input:-webkit-autofill:hover,
+#a__about-me-form .g__form_field.g__auth-field input:-webkit-autofill:focus {
+  border: 0px solid #5d50e6;
+  -webkit-text-fill-color: #a1a1a1;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

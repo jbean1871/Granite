@@ -1,0 +1,127 @@
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.auth-container {
+  font-family: "hero-new, sans-serif";
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.a__login-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+#no-account-link .g__elm_btn {
+  text-decoration: underline;
+}
+#no-account-link .g__elm_btn,
+#sso-link .g__elm_btn,
+#forgot-password-link {
+  text-decoration: underline;
+}
+/* ----------
+Sign in Links
+----------*/
+.a__alt-sign-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+}
+.g__circle-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  width: 122px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 50%;
+}
+/* ----------
+Divider
+----------*/
+.a__divider {
+  margin-top: 5px;
+  width: 100%;
+}
+.a__divider h3 {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  color: #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.a__divider h3 span {
+  background: #fff;
+  padding: 0 10px;
+}
+/* ----------
+Form Styles
+----------*/
+#reset-form .g__form_field.g__auth-field {
+  padding: 8px 0;
+}
+#reset-form .g__form_field.g__auth-field input {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  border-radius: 50px;
+  border: 1px solid #bfbfbf;
+  padding: 15px 15px;
+  color: #5d5d5d;
+  font-size: 14px;
+}
+#reset-form .g__form_field.g__auth-field input:focus {
+  border: 1px solid #5d50e6;
+}
+#reset-form #g__submit_cancel #g__submit_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 48px;
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 50px;
+  background: #5d50e6;
+  transition: all 0.5s;
+}
+#reset-form #g__submit_cancel #g__submit_btn:hover {
+  background: #3361b8;
+}
+#reset-form .g__password_show {
+  background: transparent;
+  color: #bfbfbf;
+  border-left: 0;
+  font-size: 24px;
+  right: 10px;
+}
+#reset-form input:-webkit-autofill,
+#reset-form input:-webkit-autofill:hover,
+#reset-form input:-webkit-autofill:focus {
+  border: 1px solid #5d50e6;
+  -webkit-text-fill-color: #a1a1a1;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#reset-back a {
+  text-decoration: underline;
+  color: #a1a1a1;
+}

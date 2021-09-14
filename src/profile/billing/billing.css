@@ -1,0 +1,201 @@
+.a__billing-content {
+  display: flex;
+  flex-direction: column;
+  --text-color: #404040;
+  --free-color: #46c3e5;
+  --team-color: #4788ff;
+  --enterprise-color: #aa4cfc;
+}
+.a__billing-breadcrumb ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+.a__billing-breadcrumb ul li:not(:first-child):before {
+  font-family: "Font Awesome 5 pro";
+  font-weight: 400;
+  content: "\f054";
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.a__billing-options {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.a__billing-plan {
+  margin: 15px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+}
+
+.a__plan-name {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+.a__plan-description {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--text-color);
+}
+.a__plan-price {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 24px;
+  color: var(--free-color);
+  text-transform: uppercase;
+}
+.a__price-month {
+  display: block;
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+.a__feature-header {
+  font-family: Hero New;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 50px;
+  color: var(--text-color);
+}
+ul.a__feature-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.a__feature-list li {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+.a__feature-list li:before {
+  font-family: "Font Awesome 5 pro";
+  font-weight: 400;
+  content: "\f00c";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 15px;
+  color: #46c3e5;
+}
+.a__price-btn {
+  background: #f5f5f5;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  margin-top: 50px;
+}
+/*--------- Free ----------*/
+.a__billing-plan.a__free {
+  background: rgba(125, 219, 245, 0.1);
+}
+.a__free .a__plan-name,
+.a__free .a__plan-price {
+  color: var(--free-color);
+}
+.a__free .a__price-btn {
+  background: var(--free-color);
+}
+/*--------- Team ----------*/
+.a__billing-plan.a__team {
+  background: rgba(71, 136, 255, 0.1);
+}
+.a__team .a__plan-name,
+.a__team .a__plan-price {
+  color: var(--team-color);
+}
+.a__team .a__price-btn {
+  background: var(--team-color);
+}
+/*--------- Enterprise ----------*/
+.a__billing-plan.a__enterprise {
+  background: rgba(170, 76, 252, 0.1);
+}
+.a__enterprise .a__plan-name,
+.a__enterprise .a__plan-price {
+  color: var(--enterprise-color);
+}
+.a__enterprise .a__price-btn {
+  background: var(--enterprise-color);
+}
+/*----------
+Payment Details
+-----------*/
+.a__payment-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+.a__payment-left-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.a__payment-right-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.a__payment-box {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 15px;
+}
+.a__info-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ----------
+Mobile Styles
+----------*/
+@media only screen and (max-width: 768px) {
+  .a__billing-breadcrumb ul li:not(:first-child):before {
+    font-size: 10px;
+  }
+  .a__billing-breadcrumb ul li {
+    font-size: 12px;
+  }
+  .a__billing-options {
+    flex-direction: column;
+  }
+  .a__payment-details {
+    flex-direction: column;
+  }
+  .a__payment-left-content,
+  .a__payment-right-content {
+    width: 100%;
+  }
+}
